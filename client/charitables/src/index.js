@@ -3,8 +3,8 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  /*Route,
-  Link,*/
+  Route,
+  Link,
   Outlet,
 } from "react-router-dom";
 import Home from "./routes/Home";
