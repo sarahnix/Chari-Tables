@@ -87,7 +87,7 @@ function Navbar() {
                   }
                   onClick={closeMobileMenu}
                 >
-                  User
+                  Login
                 </NavLink>
               </li>
             </ul>
