@@ -74,7 +74,7 @@
   }
   
   .activated {
-    color: #19191a;
+    color: #09bef0;
   }
   
   .fa-bars {
@@ -102,7 +102,7 @@
     }
   
     .nav-menu.active {
-      background: #09bef0;
+      background: #19191a;
       left: 0;
       opacity: 1;
       transition: all 0.6s ease;
