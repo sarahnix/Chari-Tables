@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Form, Button, Card } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function SignUp() {
   const emailRef = useRef();
