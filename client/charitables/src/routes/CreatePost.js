@@ -2,31 +2,37 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import "./CreatePost.css";
 import * as Yup from "yup";
+import axios from "axios";
 
 function CreatePost() {
-  const initialValues = {
+  const initialValues_ = {
     orgName: "",
     yourName: "",
     amount: "",
     postText: "",
   };
 
-  const validationSchema = Yup.object().shape({
-    orgName: Yup.string().required(),
-    yourName: Yup.string().required(),
-    postText: Yup.string().min(5).required(),
+  const validationSchema_ = Yup.object().shape({
+    orgName: Yup.string().required("You must input a title"),
+    yourName: Yup.string().required("You must enter your name"),
+    amount: Yup.string().required(),
+    postText: Yup.string()
+      .min(5)
+      .required("You must enter a post greater than 5 characters"),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit_ = (data) => {
+    axios.post("http://localhost:3001/posts", data).then((response) => {
+      console.log("Success!");
+    });
   };
 
   return (
     <div className="createpost">
       <Formik
-        initialValues={initialValues}
-        onSubmit={onSubmit}
-        validationSchema={validationSchema}
+        initialValues={initialValues_}
+        onSubmit={onSubmit_}
+        validationSchema={validationSchema_}
       >
         <Form className="formContainer">
           <label>Organization: </label>
