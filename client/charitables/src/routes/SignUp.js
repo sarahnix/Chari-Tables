@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Form, Button, Card } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function SignUp() {
   const emailRef = useRef();
@@ -22,7 +22,7 @@ export default function SignUp() {
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
             <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
+              <Form.Label>Confirm Password</Form.Label>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
             <Button className="w-100" type="submit">
