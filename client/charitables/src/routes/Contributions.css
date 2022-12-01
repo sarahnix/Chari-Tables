@@ -1,0 +1,56 @@
+.contributions {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .post {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid lightgray;
+  }
+  
+  
+  .post .orgName {
+    flex: 20%;
+    border-bottom: 1px solid lightgray;
+    background-color: #08a71d;
+    display: grid;
+    place-content: center;
+    color: white;
+  }
+
+  .post .amount {
+    flex: 5%;
+    background-color: #08a71d;
+    display: grid;
+    place-content: center;
+    color: white;
+  }
+
+  .post .yourName {
+    flex: 5%;
+    background-color: #08a71d;
+    display: grid;
+    place-content: center;
+    color: white;
+  }
+  
+  .post .postText {
+    flex: 60%;
+    display: grid;
+    place-content: center;
+  }
+  

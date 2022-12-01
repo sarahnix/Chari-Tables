@@ -12,12 +12,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    name: {
+    yourName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     amount: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
   });

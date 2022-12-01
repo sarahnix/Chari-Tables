@@ -1,6 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import {
+  BrowserRouter as Router,
+  Switch,
   createBrowserRouter,
   RouterProvider,
   Route,
@@ -16,6 +18,7 @@ import Login from "./routes/Login";
 import SignUp from "./routes/SignUp";
 import Contributions from "./routes/Contributions";
 import Navbar from "./components/Navbar";
+import CreatePost from "./routes/CreatePost";
 
 const Layout = () => {
   return (
@@ -61,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "contributions",
         element: <Contributions />,
+      },
+      {
+        path: "createpost",
+        element: <CreatePost />,
       },
     ],
   },
