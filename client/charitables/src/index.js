@@ -14,6 +14,7 @@ import Donate from "./routes/Donate";
 import Contact from "./routes/Contact";
 import Login from "./routes/Login";
 import SignUp from "./routes/SignUp";
+import Contributions from "./routes/Contributions";
 import Navbar from "./components/Navbar";
 
 const Layout = () => {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignUp />,
+      },
+      {
+        path: "contributions",
+        element: <Contributions />,
       },
     ],
   },
