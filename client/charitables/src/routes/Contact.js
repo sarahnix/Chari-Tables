@@ -26,20 +26,14 @@ const Contact = () => {
       method="POST"
       target="_blank"
     >
-      <h1>Contact Us</h1>
-      <div>
-        <input type="text" placeholder="Your name" name="name" required />
-      </div>
-      <div>
-        <input type="email" placeholder="Email" name="email" required />
-      </div>
-      <div>
-        <textarea placeholder="Your message" name="message" required />
-      </div>
-      <div>
-        <button type="submit"> Send a message </button>
-      </div>
+    <div className = "form">
+    <form>      
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Message"> </textarea>
+      <input type="submit" value="SUBMIT"/>
     </form>
+   </div>
   );
 };
 
